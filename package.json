@@ -1,12 +1,12 @@
 {
-  "name": "rbush-knn",
-  "version": "3.0.1",
-  "description": "k-neareset neighbors search for RBush",
-  "main": "rbush-knn.js",
+  "name": "rbush-3d-knn",
+  "version": "0.0.1",
+  "description": "k-neareset neighbors search for RBush-3d",
+  "main": "rbush-3d-knn.js",
   "module": "index.js",
-  "browser": "rbush-knn.min.js",
-  "jsdelivr": "rbush-knn.min.js",
-  "unpkg": "rbush-knn.min.js",
+  "browser": "rbush-3d-knn.min.js",
+  "jsdelivr": "rbush-3d-knn.min.js",
+  "unpkg": "rbush-3d-knn.min.js",
   "scripts": {
     "bench": "node -r esm bench.js",
     "test": "eslint index.js test.js bench.js && tape -r esm test.js",
@@ -14,20 +14,20 @@
     "prepare": "npm run build"
   },
   "keywords": [
-    "rbush",
-    "knn",
-    "k neareset neighbors",
+    "rbush-3d",
+    "3d-knn",
+    "3d k neareset neighbors",
     "data structure",
     "query"
   ],
-  "author": "Vladimir Agafonkin",
+  "author": "ion9",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^8.4.0",
     "eslint": "^6.8.0",
     "eslint-config-mourner": "^2.0.3",
     "esm": "^3.2.25",
-    "rbush": "^3.0.1",
+    "rbush-3d": "^0.0.4",
     "rollup": "^2.23.0",
     "rollup-plugin-terser": "^6.1.0",
     "tape": "^4.13.2"
@@ -43,8 +43,8 @@
   },
   "files": [
     "index.js",
-    "rbush-knn.js",
-    "rbush-knn.min.js"
+    "rbush-3d-knn.js",
+    "rbush-3d-knn.min.js"
   ],
-  "repository": "mourner/rbush-knn"
+  "repository": "ion9/rbush-3d-knn"
 }

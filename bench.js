@@ -1,4 +1,4 @@
-import RBush from 'rbush';
+import {RBush3D} from 'rbush-3d';
 import knn from './index';
 
 var N = 200000,
@@ -13,7 +13,7 @@ for (var i = 0; i < N; i++) {
 }
 
 console.time('load ' + N + ' points');
-var tree = new RBush().load(points);
+var tree = new RBush3D().load(points);
 console.timeEnd('load ' + N + ' points');
 
 console.time('knn query ' + K + ' neighbors x ' + M);
@@ -31,11 +31,14 @@ console.timeEnd('bbox query x ' + M);
 
 function randPoint() {
     var x = Math.floor(Math.random() * 100000),
-        y = Math.floor(Math.random() * 100000);
+        y = Math.floor(Math.random() * 100000),
+        z = Math.floor(Math.random() * 100000);
     return {
         minX: x,
         minY: y,
+        minZ: z,
         maxX: x,
-        maxY: y
+        maxY: y,
+        maxZ: z,
     };
 }
