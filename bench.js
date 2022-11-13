@@ -1,8 +1,8 @@
 import {RBush3D} from 'rbush-3d';
 import knn from './index';
 
-var N = 200000,
-    M = 20000,
+var N = 20000,
+    M = 2000,
     K = 5;
 
 var points = [];
